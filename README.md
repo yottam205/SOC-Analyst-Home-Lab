@@ -2,6 +2,10 @@
 
 ###  Introduction
 While learning and getting into the field of Cybersecurity, to gain some more practical knowledge, I’ve decided on going through Eric Capuano's blog series, "So You Want to Be a SOC Analyst?". This class gave practical, hands-on experience in cybersecurity, from establishing a secure environment to recognizing and mitigating risks. Here, I document my process and significant activities from each installment of the series.
+
+Eric Capuano's blog post:
+https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro
+
 ###  Part 1: Setting Up the Environment
 
 ####  Virtualization Setup
