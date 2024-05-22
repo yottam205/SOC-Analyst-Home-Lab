@@ -37,8 +37,17 @@ To simulate real-world attacks, I set up a Command and Control (C2) server using
 ####  Executing the Payload
 I executed the generated payload on the Windows VM, which initiated a connection back to the C2 server. This setup allowed me to interact with the compromised system through the C2 framework, mimicking the actions of a real attacker.
 
-*Screenshot of C2 setup and payload execution here*
-![C2 Setup and Payload Execution](path/to/screenshot4.png)
+![Screenshot (14)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/a1486004-8dc4-4180-b50d-36bfc2bad9d4)
+![Screenshot (16)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/b8f19297-cb39-4f9a-82c9-b850fdd253c6)
+![Screenshot (17)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/4d776619-fe1a-489c-a0d3-b44f5415396d)
+![Screenshot (18)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/4bafb2b9-1ee4-42f3-b35c-de4d25462a2f)
+![Screenshot (19)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/225bc409-700f-4db1-a450-3322cb24e53e)
+![Screenshot (20)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/102f3b7d-e0d1-4479-972e-80ceb9065ed8)
+![Screenshot (21)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/2e2235ac-b81c-43d1-9799-bfdf3daf855e)
+![Screenshot (22)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/f31b6fc3-9ca9-42f0-b9d2-b5c79024c20c)
+![Screenshot (23)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/0b32cd92-cf87-4fb6-aff0-acd7c170e224)
+![Screenshot (24)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/b76dfc79-6f3d-460a-92fe-47ed43d1c012)
+
 
 ####  Observing EDR Telemetry
 Using the telemetry data from LimaCharlie’s EDR platform, I monitored the activities performed through the C2 connection. This included observing process trees, network connections, and other system behaviors that indicated a compromise.
