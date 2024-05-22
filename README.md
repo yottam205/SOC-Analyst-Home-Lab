@@ -12,15 +12,17 @@ To simulate a realistic network environment, I set up a home lab using two virtu
 ####  Disabling Windows Defender
 The first step involved disabling Windows Defender on my Windows VM. This was necessary to prevent Defender from interfering with the malware simulations and tests. By modifying Group Policy and registry settings, I ensured that Defender was completely turned off, allowing for unimpeded testing.
 
-*Screenshot of disabling Windows Defender here*
-![Disabling Windows Defender](path/to/screenshot2.png)
+![Screenshot (3)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/a1aba564-6bc4-4639-be1a-633688ab15c1)
+![Screenshot (4)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/66374add-1e81-42e5-be48-c4052b8979ce)
+![Screenshot (6)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/ecf19be4-74d2-43a0-b3ee-261c234afd39)
+![Screenshot (8)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/27ad11b9-b41b-4889-bca1-316fe1c6843e)
 
 
 ####  Installing Sysmon
 Next, I installed Sysmon on the Windows VM. Sysmon is a powerful system monitoring tool that provides detailed logging of system activities, such as process creations, network connections, and file modifications. This level of logging is crucial for detecting and analyzing suspicious activities within the system.
 
-*Screenshot of Sysmon installation here*
-![Sysmon Installation](path/to/screenshot3.png)
+![Screenshot (10)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/e126aecc-d4e7-481b-9352-9937e917beae)
+
 
 By setting up this controlled environment, I ensured a stable and secure platform for testing advanced cybersecurity techniques and simulations, establishing the framework for future exploration in the SOC Analyst role.
 
