@@ -89,14 +89,15 @@ In the fourth part of the series, I focused on creating rules to block specific 
 ####  Creating Blocking Rules
 I developed a rule to detect and block the deletion of Volume Shadow Copies, a common technique used by ransomware to prevent recovery. This involved setting up a detection rule in LimaCharlie to monitor for the `vssadmin delete shadows /all` command and automatically terminate the parent process executing this command.
 
-*Screenshot of blocking rules setup here*
-![Blocking Rules Setup](path/to/screenshot8.png)
 
 ####  Testing the Blocking Rules
 To ensure the rule's effectiveness, I executed the `vssadmin delete shadows /all` command from the Sliver C2 session and observed the detection and response action in LimaCharlie. The rule successfully identified and blocked the activity, demonstrating its effectiveness in mitigating ransomware attacks.
 
-*Screenshot of testing blocking rules here*
-![Testing Blocking Rules](path/to/screenshot9.png)
+![Screenshot (42)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/538a3c09-c112-4cf1-92c2-fda2ce112572)
+![Screenshot (43)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/16ff28fd-767d-4caa-9d71-0c0224e5e368)
+![Screenshot (44)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/d2c1a585-9fb2-4b07-a075-7ef000630712)
+![Screenshot (45)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/2eb0a316-1eb9-45e4-aee4-f5d9c28c76b8)
+
 
 By implementing these blocking rules, I significantly improved the system's defenses against ransomware and other destructive attacks.
 
@@ -117,20 +118,26 @@ I wrote custom YARA rules to detect malicious payloads and tested these rules us
 - Creating YARA rules tailored to detect specific characteristics of malware.
 - Executing manual YARA scans on the Windows VM to validate the effectiveness of these rules.
 
-*Screenshot of YARA rule testing here*
-![YARA Rule Testing](path/to/screenshot10.png)
+![Screenshot (46)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/13b12499-8ea9-4c2c-a30f-cab08adc5f3a)
+![Screenshot (47)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/8b21c740-a994-498d-8041-5eb4fbe7e64c)
+
 
 ####  Automating YARA Scans
 To ensure continuous monitoring, I automated the YARA scanning process for new executable files in the Downloads directory. This setup allowed for real-time detection of potential threats as soon as new files were added.
 
-*Screenshot of automated YARA scans here*
-![Automated YARA Scans](path/to/screenshot11.png)
+![Screenshot (49)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/c3a476c4-a663-4b42-ae2f-768c956fba82)
+![Screenshot (50)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/b6af46dc-1fb9-4301-b3ca-abde9bfc97fd)
+![Screenshot (51)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/d1192568-4aed-45a1-a236-cab4f0dbd2e2)
+![Screenshot (52)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/f987d905-7b1a-4452-a56d-d7b3d122a65e)
+![Screenshot (53)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/fe41dde3-ccef-426d-9ed5-77741f01d499)
+![Screenshot (54)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/9c52a0d3-505c-4f3d-912c-1dd7abde6ddd)
+
 
 ####  Scanning Processes Launched from Downloads
 As part of the automation, I also set up rules to scan any process launched from the Downloads directory. This additional layer of security helps catch any malicious activity that might occur when new executables are run.
 
-*Screenshot of process scanning setup here*
-![Process Scanning Setup](path/to/screenshot12.png)
+![Screenshot (56)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/9cdf8120-0ba7-449a-9726-8cc5e73bf00d)
+
 
 ####  Challenges Encountered
 While attempting to complete the last part of Part 6, I faced difficulties in stopping the process with:
