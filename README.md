@@ -52,8 +52,13 @@ I executed the generated payload on the Windows VM, which initiated a connection
 ####  Observing EDR Telemetry
 Using the telemetry data from LimaCharlie’s EDR platform, I monitored the activities performed through the C2 connection. This included observing process trees, network connections, and other system behaviors that indicated a compromise.
 
-*Screenshot of EDR telemetry here*
-![EDR Telemetry](path/to/screenshot5.png)
+![Screenshot (26)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/3030eb42-76cf-4955-b3de-36f63574c0bb)
+![Screenshot (27)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/b87c839e-01cb-4990-810f-51d992ca815b)
+![Screenshot (28)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/f854d7ce-515e-4aee-ba94-c6f03e23854c)
+![Screenshot (29)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/f71ddb11-154b-4ef8-b1fd-02efc214f748)
+![Screenshot (30)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/7770291a-d7b6-480a-beff-f7ec48014eca)
+![Screenshot (31)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/70183013-c021-41b3-ae81-a67f6a30d3de)
+
 
 Simulating adversarial actions provided me with vital insights into attacker tactics, methods, and procedures (TTPs), allowing me to better recognize and respond to real-world threats.
 
@@ -64,14 +69,15 @@ In the third part of the series, I concentrated on simulating and identifying va
 ####  Credential Dumping
 To simulate credential theft, I used a tool called `procdump` to dump the `lsass.exe` process memory. This technique is commonly used by attackers to extract credentials from memory.
 
-*Screenshot of credential dumping here*
-![Credential Dumping](path/to/screenshot6.png)
-
 ####  Detecting Malicious Activities
 Using LimaCharlie’s EDR, I analyzed the telemetry data generated from the credential dumping activity. This involved identifying key indicators of compromise (IoCs) and creating detection rules to alert on such activities.
 
-*Screenshot of detecting malicious activities here*
-![Detecting Malicious Activities](path/to/screenshot7.png)
+![Screenshot (34)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/cf493147-2b38-4833-84d4-8add79c08f7a)
+![Screenshot (36)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/c08b560b-ab0e-4551-a476-2b75167ba926)
+![Screenshot (37)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/47c223d9-0955-43e7-af9e-494c7bb6dd9a)
+![Screenshot (38)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/f9cd0d73-a198-47e9-b1fd-ba363a58b968)
+![Screenshot (40)](https://github.com/yottam205/SOC-Analyst--Practical-Exercises/assets/117525375/3ea4bb74-d4ed-49bf-84a8-3b1992439e3a)
+
 
 By simulating and detecting these attacks, I gained a better understanding of the techniques used by attackers and the methods to effectively detect and respond to such threats.
 
